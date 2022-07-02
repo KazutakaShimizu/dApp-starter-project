@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.tsx',
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/public'),
     filename: 'bundle.js',
   },
   devtool: 'inline-source-map',
@@ -22,7 +22,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist'),
+      directory: path.resolve(__dirname, 'public'),
     },
     open: true,
     hot: true,
